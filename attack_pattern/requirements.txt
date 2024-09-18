@@ -1,8 +1,8 @@
 numpy
-transformers==v3.1.0
+transformers
 tqdm
 torch
-sklearn
+scikit-learn
 spacy
 torchtext
 pandas
