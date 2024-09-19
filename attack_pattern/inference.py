@@ -138,7 +138,7 @@ def infer():
     # print(device)
     
     entity_model = EntityRecognition(args.entity_extraction_model).to(device)
-    entity_model.load_state_dict(torch.load(args.entity_extraction_weight, map_location=device))
+    entity_model.load_state_dict(torch.load(args.entity_extraction_weight, map_location=device), strict=False)
 
 
     if MODELS[args.sentence_classification_model][3] == 'bert':
